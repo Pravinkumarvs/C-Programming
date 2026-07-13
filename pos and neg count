@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main()
+{
+    int n,p=0,ne=0;
+
+    scanf("%d",&n);
+
+    int a[n];
+
+    for(int i=0;i<n;i++)
+        scanf("%d",&a[i]);
+
+    for(int i=0;i<n;i++)
+    {
+        if(a[i]>=0)
+            p++;
+        else
+            ne++;
+    }
+
+    printf("%d %d",p,ne);
+
+    return 0;
+}
