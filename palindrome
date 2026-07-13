@@ -2,7 +2,7 @@
 
 int main()
 {
-    int n,j=0,t;
+    int n,p=0,ne=0;
 
     scanf("%d",&n);
 
@@ -13,17 +13,13 @@ int main()
 
     for(int i=0;i<n;i++)
     {
-        if(a[i]!=0)
-        {
-            t=a[i];
-            a[i]=a[j];
-            a[j]=t;
-            j++;
-        }
+        if(a[i]>=0)
+            p++;
+        else
+            ne++;
     }
 
-    for(int i=0;i<n;i++)
-        printf("%d ",a[i]);
+    printf("%d %d",p,ne);
 
     return 0;
 }
