@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+    int n,fm,sum=0,final;
+    scanf("%d",&n);
+    int a[n-1];
+    for(int i=0;i<n-1;i++){
+        scanf("%d",&a[i]);
+    }
+    
+        fm=n*(n+1)/2;
+    for(int i=0;i<n-1;i++){
+        sum+=a[i];
+    }
+    final=fm-sum;
+    printf("%d",final);
+    return 0;
+}
